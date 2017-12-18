@@ -12,7 +12,7 @@ public static void Run(HttpRequestMessage req, TraceWriter log)
 
     if (ConfigurationManager.ConnectionStrings["myConnString"]== null)
     {
-        connStr = $"Server=tcp:jebrook-webappwithdatabasedbserver.database.windows.net,1433;Initial Catalog=jebrook-webappwithdatabase_db;Persist Security Info=False;User ID=jebrook;Password=Pa$$w0rd!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=5;";
+        connStr = $"Server=tcp:xxx.database.windows.net,1433;Initial Catalog=xxxx;Persist Security Info=False;User ID=xxx;Password=xxxx;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=5;";
         conn = new SqlConnection(connStr);
         log.Info("Using manually inputed connection string...");
     }
